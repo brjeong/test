@@ -1,22 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function () {
+    $('#tt').hide();
+    
+  $("#btn").click(function () {
+    $('#tt').show();
+  });
+});
+
+
+
+  
+</script>
 <body>
     <h1>친구들 안뇽?</h1>
-    <table border="1">
-        <tr>
-            <td colspan="2" >바보</td>
-        </tr>
-        <tr>
-            <td>이수지</td>
-            <td>이경민</td>
-        </tr>
-    </table>
-    <h2>신기방기</h2>
+    <input type="button" value="눌러보세요" onclick="click();" id="btn">
+    <h1 id="tt">메롱</p>
+    
 </body>
 </html>
